@@ -147,14 +147,14 @@ const config = {
       },
     }),
 };
-module.exports = {
-  // ...
-  title: 'LFS docs',
-  // tagline: 'Some tagline', // optional, but nice to have
-  url: 'https://PranavKharche24.github.io',
-  baseUrl: '/https://github.com/PranavKharche24/LFS_Pravartak_docs.git/',
-  // ...
-};
+// module.exports = {
+//   // ...
+//   title: 'LFS docs',
+//   // tagline: 'Some tagline', // optional, but nice to have
+//   url: 'https://PranavKharche24.github.io',
+//   baseUrl: '/https://github.com/PranavKharche24/LFS_Pravartak_docs.git/',
+//   // ...
+// };
 
 
 export default config;

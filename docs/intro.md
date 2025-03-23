@@ -1,47 +1,49 @@
 ---
 sidebar_position: 1
 ---
+# Introduction
+## Building Linux From Scratch: A Beginner’s Roadmap
+Let's discover **Linux from scratch**.
 
-# Tutorial Intro
+This roadmap will guide you through Linux From Scratch (LFS) step by step, from preparing your knowledge and system to booting your custom Linux and beyond. Each phase includes an estimated timeframe, key resources, and best practices. Following the LFS book closely is critical – deviations can lead to build issues【28†21-28】. Let’s get started!
+###
 
-Let's discover **Docusaurus in less than 5 minutes**.
 
-## Getting Started
 
-Get started by **creating a new site**.
+## Prerequisites
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+### 1. Pre-requisites 
+**Estimated Duration: 1–2 weeks**
 
-### What you'll need
+Before diving into Linux From Scratch (LFS), make sure you have a solid foundation in Linux basics and system administration. LFS assumes you can perform common command-line tasks and have experience installing software<sup>[12†21–29]</sup>. Focus on the following areas:
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+### 1.1. Linux Fundamentals
+- Understand how to navigate directories, copy/move files, edit text, manage users, and use the shell.  
+- Get comfortable with the Linux filesystem hierarchy (e.g., what `/etc`, `/usr`, `/bin` are) and basic permissions.
 
-## Generate a new site
+### 1.2. Package Management Concepts
+- Know how traditional distributions handle software (e.g., Debian’s APT, RPM) versus installing from source.  
+- Recognize how LFS manages this process manually.
 
-Generate a new Docusaurus site using the **classic template**.
+### 1.3. Compiling Software from Source
+- Practice compiling small programs to understand how source code is converted to binaries: preprocessing, compiling, assembling, and linking stages<sup>[56†79–87][56†89–97]</sup>.  
+- Use GCC to compile a simple C program, and use `make` to build a multi-file project.
 
-The classic template will automatically be added to your project after you run the command:
+### 1.4. Bash Scripting & Tools
+- Improve your Bash skills: learn how to write simple bash scripts for tasks like backups or text processing.  
+- Familiarize yourself with essential tools like `tar`, `grep`, `sed`, `awk`, and text editors (vim/nano).
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+### 1.5. Dependencies and Linking
+- Read about how libraries work (static vs. dynamic linking) and how programs find the libraries they need.  
+- Understand why building Glibc early and adjusting the linker is crucial, ensuring that all later programs link against your new Glibc<sup>[33†252–258]</sup>.
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+### 1.6. Recommended Reading
+- **Software-Building HOWTO**<sup>[12†35–43]</sup>  
+- **A Beginner’s Guide to Installing Linux Software from Source**<sup>[12†40–48]</sup>  
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+These resources discuss the generic build/install processes (`configure`, `make`, `make install`) and address common issues.
 
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+### 1.7. Best Practices
+- Take notes as you learn.  
+- Create a checklist of skills and mark them off as you practice.  
+- By the end of this phase, you should be comfortable in a terminal-only environment, as the LFS build is entirely command-line based.
